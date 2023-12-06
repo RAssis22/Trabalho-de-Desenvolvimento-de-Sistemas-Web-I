@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Veiculos</title>
+        <meta charset="utf-8"/>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <style>
+            label {
+                width: 200px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Veiculos</h1>
+        <div id="loading" style="display: none;">
+		</div>
+		
+		<div id="conteudo">
+        <input type="button" value="Novo" onclick="novo()"/>
+        <div id="formulario" style="display: none;">
+            <label>
+                Modelo: <input type="text" id="modelo"/>
+            </label><br/>
+            <label>
+               Marca: <input type="text" id="marca"/>
+            </label><br/>
+            <label>
+                Ano: <input type="text" id="ano"/>
+            </label><br/>
+            <label>
+               Placa: <input type="text" id="placa"/>
+            </label><br/>
+            <label>
+                Cor:<input type="text" id="cor"/>
+            </label><br/>
+            <input type="button" value="Salvar" onclick="salvar()"/>
+            <input type="button" value="Cancelar" onclick="cancelar()"/>
+        </div>
+        <div id="lista">
+            <table border="1" width="100%">
+                <thead>
+                    <th>Id</th>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Ano</th>
+                    <th>Placa</th>
+                    <th>Cor</th>
+                    <th></th>
+                    <th></th>
+
+                </thead>
+                <tbody id="dados">
+
+                </tbody>
+            </table>
+       	 	</div>
+       	 </div>
+        
+        <script src="crud.js"></script>
+    </body>
+
+</html>
